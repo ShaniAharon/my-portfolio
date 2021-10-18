@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="init()">
+
+
+    <h1>Mine Sweeper</h1>
+    <video src="" muted loop autoplay>
+      
+    </video>
+
+    <div class="modal">
+      <h2></h2>
+      <span></span>
+      <button class="btn-close" onclick="closeModal()">Close</button>
+    </div>    
+
+    <section class="level">
+      <label for="level">Choose a Level:</label>
+      <select id="level" onchange="changeLevel()">
+        <option value="beginner">Beginner </option>
+        <option value="medium">Medium</option>
+        <option value="expert">Expert</option>
+      </select>
+    </section>
+
+    <div class="info">
+      <p class="flag">🚩: <span class="flags-count"></span></p>
+
+      <p>💖: <span class="lives"></span></p>
+      <p class="hints">  <button class="btn-hint" id="btn-0" onclick="useHint(this)">💡</button>
+        <button class="btn-hint" id="btn-1" onclick="useHint(this)">💡</button>
+        <button class="btn-hint" id="btn-2" onclick="useHint(this)">💡</button>
+      </p>
+    </div>
+
+    
+      
+    </option>
+    <div class="score">
+<!-- added on click event on js to make it dynamic  -->
+    <p ><u>Best Score</u> <br> <br><span class="best-score"></span></p>
+    </div>
+
+    <div class="container">
+      <p class="time">Time: <span class="timer"></span></p>
+
+      <div class="above-menu">
+        <button class="btn-restart">🧐</button>
+  
+      </div>
+      
+      <table>
+        <tbody class="gameBoard"></tbody>
+      </table>
+    </div>
+    
+    <br>
+
+    <div class="hero-buttons">
+      <button class="btn-safe" onclick="showSafeClick()">Safe Click : <span class="safe-number"></span> </button>
+      <!-- <p><span class="safe-number"></span> clicks avalibale</p> -->
+     
+      <button class="manually" onclick="manuallMode()">Manuall Mode</button>
+      
+      <button class="btn-undo" onclick="undo()">Undo</button>
+      <button class="btn-seven" onclick="SevenBoom()">Seven Boom</button>
+    </div>
+
+   
+    
+     <script src="utils.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

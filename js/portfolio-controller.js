@@ -70,7 +70,7 @@ function renderModal(projId) {
                     aperiam quasi sunt officia expedita beatae cupiditate,
                     maiores repudiandae, nostrum, reiciendis facere nemo!
                   </p>
-                  <button class="btn btn-info" onclick="window.open('projs/chess/index.html')">Check it out</button>
+                  <button class="btn btn-info" onclick="window.open('${proj.url}')">Check it out</button>
                   <ul class="list-inline">
                     <li>Date: January 2017</li>
                     <li>Client: Threads</li>

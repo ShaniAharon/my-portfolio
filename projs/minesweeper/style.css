@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  text-align: center;
+  background-image: url('https://media.istockphoto.com/photos/3d-render-glowing-lines-tunnel-neon-lights-virtual-reality-abstract-picture-id1029720416?b=1&k=20&m=1029720416&s=170667a&w=0&h=3e7HkbbyqZFDqIR9rErd8Lbco3fh6xJNgOXVw_KfnKs=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+}
+button {
+  cursor: pointer;
+}
+
+.level {
+  /* margin-top: 100px; */
+  margin-right: 600px;
+  color: white;
+  font-size: large;
+  font-weight: 700;
+}
+
+table {
+  border: 1px solid white;
+  text-align: center;
+  /* prevent form text select */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: auto;
+}
+
+.info {
+  display: inline-block;
+  /* left: 20px; */
+  margin-left: 255px;
+  position: absolute;
+  margin-top: 45px;
+  width: 200px;
+  /* background-image: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHdhbGxwYXBlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); */
+  background-image: url('https://images.unsplash.com/photo-1584079247326-05f7001058ee?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNhdmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  background-size: cover;
+  border-radius: 35%;
+}
+
+.score {
+  position: absolute;
+  width: 100px;
+  margin-left: 250px;
+  margin-top: 75px;
+  color: aliceblue;
+  /* background-image: url('https://media.istockphoto.com/photos/empty-blackboard-picture-id492819171?b=1&k=20&m=492819171&s=170667a&w=0&h=GjnpyoHteZMu_GWY1X9PvuD6tW939whZeC7zfdym13c='); */
+  background-image: url('https://images.unsplash.com/photo-1567753480694-9f96941c473b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGNhdmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  background-size: contain;
+  height: 100px;
+  border-radius: 25%;
+}
+
+.above-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.time {
+  position: absolute;
+  padding-right: 0.5em;
+  margin-left: 500px;
+  margin-bottom: 30px;
+  border: 1px solid pink;
+}
+
+@media (max-width: 750px) {
+  .time {
+    margin-left: 450px;
+  }
+}
+
+/* .flag {
+  padding
+} */
+
+.above-menu button {
+  /* margin-right: 5px; */
+  height: 30px;
+  margin-top: 15px;
+}
+
+/* .gameBoard td:hover {
+  background-color: rgb(228, 189, 228) !important;
+} */
+
+/* .modal {
+  font-size: 3rem;
+  color: #ff7878;
+  width: 300px;
+  height: 300px;
+  display: none;
+  background-color: aqua;
+  border-radius: 15%;
+  position: absolute;
+  margin-top: 4rem;
+  text-align: center;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+.modal span {
+  font-size: 50px;
+}
+
+video {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  margin-left: 500px;
+  z-index: 1;
+  animation: fadeIn 1s forwards;
+}
+
+.modal button {
+  display: block;
+  margin: auto;
+  padding: 0.5em;
+  font-weight: 700;
+  background-color: cornflowerblue;
+  border: 3px solid burlywood;
+  border-radius: 30%;
+}
+
+.modal button:hover {
+  background-color: rgb(173, 191, 226);
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  width: 300px;
+  height: 300px;
+  margin-left: 500px;
+  margin-top: 100px;
+  border-radius: 15%;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gameBoard td {
+  border: 1px solid;
+  width: 28px;
+  height: 28px;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: blueviolet;
+  color: transparent;
+}
+
+.hero-buttons {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-buttons button {
+  padding: 0.5em;
+  margin: 0 1.5em;
+  font-weight: 700;
+  background-color: cornflowerblue;
+  border: 3px solid burlywood;
+  border-radius: 30%;
+}
+
+.hero-buttons button:hover {
+  background-color: rgb(133, 166, 228);
+  cursor: pointer;
+}
+
+.hint {
+  background-color: white !important;
+  color: black;
+}
+
+.safe {
+  background-color: yellow !important;
+}
+
+/* .info {
+  display: flex;
+  justify-content: space-around;
+} */
