@@ -22,7 +22,7 @@ function renderProjs() {
           </div>
           <img
             class="img-fluid"
-            src="img/portfolio/01-thumbnail.jpg"
+            src="${proj.imgSrc}"
             alt=""
           />
         </a>
@@ -60,7 +60,7 @@ function renderModal(projId) {
                   </p>
                   <img
                     class="img-fluid d-block mx-auto"
-                    src="img/portfolio/01-full.jpg"
+                    src="${proj.imgSrc}"
                     alt=""
                   />
                   <p>
@@ -70,7 +70,7 @@ function renderModal(projId) {
                     aperiam quasi sunt officia expedita beatae cupiditate,
                     maiores repudiandae, nostrum, reiciendis facere nemo!
                   </p>
-                  <button class="btn btn-info" onclick="">Check it out</button>
+                  <button class="btn btn-info" onclick="window.open('projs/chess/index.html')">Check it out</button>
                   <ul class="list-inline">
                     <li>Date: January 2017</li>
                     <li>Client: Threads</li>

@@ -3,11 +3,12 @@ console.log('Starting up');
 
 var gProjs = [
   {
-    id: 'sokoban',
-    name: 'Sokoban',
+    id: 'chess',
+    name: 'Chess Demo',
     title: 'Better push those boxes',
     desc: 'lorem ipsum lorem ipsum lorem ipsum',
-    url: 'projs/sokoban',
+    imgSrc: 'img/proj-pic/chess.png',
+    url: 'projs/chess/index.html',
     publishedAt: 1448693940000,
     labels: ['Matrixes', 'keyboard events'],
   },
