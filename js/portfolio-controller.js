@@ -1,6 +1,7 @@
 'use strict';
 
 function onInit() {
+  //crate projs
   renderProjs();
 }
 
@@ -39,8 +40,6 @@ function renderProjs() {
 
 function renderModal(projId) {
   var proj = getProjById(projId);
-  console.log('run');
-  console.log(proj);
   var strHtml = `
       <div class="modal-dialog">
         <div class="modal-content">

@@ -1,6 +1,7 @@
 'use strict';
 console.log('Starting up');
 
+//make create proj func
 var gProjs = [
   {
     id: 'chess',
@@ -37,6 +38,21 @@ var gProjs = [
 function getProjs() {
   return gProjs;
 }
+
+// function createProj(id, name, imgSrc, url) {
+//   var proj = {
+//     id,
+//     name,
+//     imgSrc,
+//     url,
+//     publishedAt: Date.now(),
+//   };
+//   return proj;
+// }
+
+// function createProjs() {
+
+// }
 
 function getProjById(projId) {
   return gProjs.find((proj) => proj.id === projId);
